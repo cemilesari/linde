@@ -1,0 +1,163 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "İletişim" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+
+<!-- Page Banner Section -->
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/Blog_V1.jpg');"></div>
+
+    <div class="auto-container">
+        <h1>İletişim</h1>
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li class="active">İletişim</li>
+                </ul>
+            </div>
+        </div> 
+    </div>
+</section>
+<!--Contact Section-->
+<section class="contact-section contact-page">
+    <div class="auto-container">
+
+        <div class="info-blocks">
+            <div class="row clearfix">
+                <!--Info Block-->
+                <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <div class="inner">
+                        <div class="icon">
+                            <img src="{% static 'web/images/il/lokasyon.png' %}" style="width:30%;height: 30%;">
+                        </div>
+                        <strong>Adres</strong>
+                        <ul class="info">
+                            <li>Bağ-Gün Sanayi Sitesi, İkitelli OSB, 1. Blok No:53, 34490<br> Başakşehir/İstanbul </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Info Block-->
+                <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="300ms"  data-wow-duration="2000ms">
+                    <div class="inner">
+                        <div class="icon">
+                            <img src="{% static 'web/images/il/phone.png' %}" style="width:30%;height: 30%;">
+                        </div>
+                        <strong>Telefon</strong>
+                        <ul class="info">
+                            <li><a href="tel:+90 531 656 91 44">+90 531 656 91 44</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!--Info Block-->
+                <div class="info-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="600ms"  data-wow-duration="2000ms">
+                    <div class="inner">
+                        <div class="icon">
+                            <img src="{% static 'web/images/il/mail.png' %}" style="width:30%;height: 30%;">
+                        </div>
+                        <strong>Mail</strong>
+                        <ul class="info">
+                            <li><a href="mailto:berkenerji@lindegazmarket.com">berkenerji@lindegazmarket.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-box clearfix wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+            <div class="form-box clearfix">
+                <div class="sec-title light-title">
+                    <h2>İletişime Geçin</h2>
+                </div>
+                <div class="default-form contact-form">
+                    <form actions="{% url 'web:enquires_view' %}" class="needs-validation" method="post" novalidate>
+                        {% csrf_token %}
+        
+                        <div class="row">
+                      <div class="col-md-6 form-group">
+                        <label for="validationCustom01">{% blocktrans %} İsim{% endblocktrans %}</label>
+                        <input type="text" name="full_name" class="form-control form-control-lg" id="validationCustom01" required>
+                      </div>
+                      <div class="col-md-6 form-group">
+                        <label for="validationCustom02">{% blocktrans %} Telefon {% endblocktrans %}</label>
+                        <input type="text" name="tel" class="form-control form-control-lg" id="validationCustom02" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="validationCustomUsername">{% blocktrans %}  Mail  {% endblocktrans %}</label>
+                        <input type="email" name="email" id="validationCustomUsername" class="form-control form-control-lg" required>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-12 form-group">
+                        <label for="message">{% blocktrans %} Mesaj  {% endblocktrans %}</label>
+                        <textarea  name="body" id="message" class="form-control form-control-lg" cols="30" rows="8"></textarea>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                         <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+              <label class="form-check-label" for="invalidCheck">
+                Lütfen KVKK kapsamında kişisel verilerinizi markamız (Volton Elektirik) ile paylaştığınızı onaylayınız. Gizlilik uygulamalarımız hakkında bilgi için web sitemizdeki <a href="{% url 'web:aydinlatma_metni' %}" style="color:#e13c5a;">KVKK Aydınlatma Metni </a> sayfamızı ziyaret edebilirsiniz. 
+              </label>
+              <div class="invalid-feedback">
+                Göndermeden önce kabul etmelisiniz.
+              </div>
+            </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-6 form-group">
+                        <input type="submit" value="Mesaj Gönder" class="btn btn-primary btn-lg btn-block" >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+            </div>
+            <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/il/iletisim.jpg');">
+                <div class="info-box">
+                    <div class="subtitle">Bizi arayabilirsiniz</div>
+                    <div class="phone">
+                        <span class="icon">
+                            <img src="images/icons/icon-call-1.png" alt="">
+                        </span>
+                        <a href="tel:+90 531 656 91 44">+90 531 656 91 44</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section border-t" style="background-color: #cbcbcb;">
+    <div class="container">
+      <div class="row justify-content-center mb-5 element-animate fadeInUp element-animated">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3007.130466154381!2d28.78929377675605!3d41.08799597133962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14caaf82cef136e9%3A0x96505fb8c6241d51!2sBerk%20Enerji%20-%20Gaz!5e0!3m2!1str!2str!4v1741287794008!5m2!1str!2str" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+</section>
+
+
+{% endblock content %}
+{% block extrajs %}
+<script>
+    (function() {
+'use strict';
+window.addEventListener('load', function() {
+// Fetch all the forms we want to apply custom Bootstrap validation styles to
+var forms = document.getElementsByClassName('needs-validation');
+// Loop over them and prevent submission
+var validation = Array.prototype.filter.call(forms, function(form) {
+form.addEventListener('submit', function(event) {
+if (form.checkValidity() === false) {
+event.preventDefault();
+event.stopPropagation();
+}
+form.classList.add('was-validated');
+}, false);
+});
+}, false);
+})();
+</script>
+{% endblock extrajs %}

@@ -1,0 +1,126 @@
+{% load static i18n %}
+
+{% if LANGUAGE_CODE == 'en' %}
+<section class="services-section-three">
+    <div class="circle-one1"></div>
+        <div class="auto-container">
+            <div class="sec-title bio-theme centered">
+           <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>What We Do ?</div>
+                <h2>Our working zones</h2>
+            </div>
+            <div class="row clearfix">
+                <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <div class="inner-box" style="height: 330px;">
+                        <div class="icon-box"  >
+                            <img src="{% static 'web/images/ticari_cozumlerimiz.png' %}" alt="current">
+                        </div>
+                        <div class="lower-box">
+                            <div class="title">
+                                <h3><a href="#">Commercial</a></h3>
+                                <div class="subtitle">We know what the commercial business needs, and we provide the highest level of solutions to our customers' demands.</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="500ms"  data-wow-duration="2000ms">
+                    <div class="inner-box"  style="height: 330px;">
+                        <div class="icon-box">
+                            <img src="{% static 'web/images/edustriyel_cozumlerimiz.png' %}" alt="current">
+                        </div>
+                        <div class="lower-box">
+                            <div class="title">
+                                <h3><a href="#">Industrial</a></h3>
+                                <div class="subtitle">We follow the transformation of many industries with our stakeholders, and develop and implement solutions. </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="500ms"  data-wow-duration="2000ms">
+                    <div class="inner-box"  style="height: 330px;">
+                        <div class="icon-box">
+                            <img src="{% static 'web/images/ysa.png' %}" alt="current">
+                        </div>
+                        <div class="lower-box">
+                            <div class="title">
+                                <h3><a href="#">Residential</a></h3>
+                                <div class="subtitle">We offer smart energy solutions for safe living spaces and provide economical energy management for medium and large-scale projects.
+ </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+</section>
+{% else %}
+<section class="services-section-three">
+    <div class="circle-one1"></div>
+        <div class="auto-container">
+            <div class="sec-title bio-theme centered">
+           <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>Neler Yapıyoruz ? </div>
+                <h2>Çalışma Alanlarımız</h2>
+            </div>
+            <div class="row clearfix">
+                <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <div class="inner-box" style="height: 330px;">
+                        <div class="icon-box">
+                            <img style="width: 75%;" src="{% static 'web/images/insaat.svg' %}" alt="current">
+                        </div>
+                        <div class="lower-box" >
+                            <div class="title">
+                                <h3><a href="#">İnşaat</a></h3>
+                                <div class="subtitle">Ticari iş hayatı ihtiyaçlarının neler olduğunu biliyor, müşterilerimizin taleplerine en yüksek düzeyde çözümler sunmak için çalışıyoruz </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="500ms"  data-wow-duration="2000ms">
+                    <div class="inner-box" style="height: 330px;">
+                        <div class="icon-box">
+                            <img src="{% static 'web/images/edustriyel_cozumlerimiz.png' %}" alt="current">
+                        </div>
+                        <div class="lower-box">
+                            <div class="title">
+                                <h3><a href="#">Enerji </a></h3>
+                                <div class="subtitle">Türkiye’nin dört bir yanındaki paydaşlarımız ile sektörler özelindeki dönüşümü takip ediyor, çözümler geliştiriyor ve uyguluyoruz. </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                    <!--Service Block Four-->
+                <div class="service-block-four col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="500ms"  data-wow-duration="2000ms">
+                    <div class="inner-box"  style="height: 330px;">
+                        <div class="icon-box" >
+                            <img src="{% static 'web/images/ysa.png' %}" alt="current">
+                        </div>
+                        <div class="lower-box">
+                            <div class="title">
+                                <h3><a href="#">Gaz </a></h3>
+                                <div class="subtitle">Güvenli yaşam alanları için akıllı enerji çözümleri sunuyor, orta ve büyük ölçekli projeler için ekonomik enerji yönetimi sağlıyoruz.  </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </div>
+</section>
+{% endif %}

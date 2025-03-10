@@ -1,0 +1,64 @@
+{% load static i18n %}
+
+{% if LANGUAGE_CODE == 'en' %}
+<section class="enquiry-section">
+      
+    <div class="auto-container">
+        <div class="sec-title centered wow fadeInDown" data-wow-delay="0ms"  data-wow-duration="1000ms" style="margin:0!important;">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Contact Us
+              <h2>How can we help you?</h2>
+
+        </div>
+
+        <div class="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+            <div class="lower-text">
+                <div class="sub-title">
+                </div>
+                <div class="info">You can contact us to get information about Volton Elektrik solutions, products and more.
+                </div>
+             <div class="info">              
+                 <a href="{% url 'web:enquires_view' %}" class="theme-btn btn-style-seven">
+                        <div class="btn-title">
+                            <span class="btn-txt">Contact us</span>
+                            <span class="btn-icon">
+                            <span class="icon flaticon-arrows-11" style="margin: 0px -2px!important;top:0px!important;"></span>
+                             </span></div></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% else %}
+<section class="enquiry-section" style="background-color:#dee6e9;">
+      
+    <div class="auto-container">
+        <div class="sec-title centered wow fadeInDown" data-wow-delay="0ms"  data-wow-duration="1000ms" style="margin:0!important;">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Bize Ulaşın
+              <h2>Size nasıl yardımcı olabiliriz?</h2>
+
+        </div>
+
+        <div class="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+            <div class="lower-text">
+                <div class="sub-title">
+                </div>
+                <div class="info">Berk Enerji çözümleri, ürünleri ve daha fazlası hakkında bilgi almak için bize ulaşabilirsiniz.                   
+                   
+                </div>
+             <div class="info">              
+                 <a href="{% url 'web:iletisim' %}" class="theme-btn btn-style-seven">
+                        <div class="btn-title">
+                            <span class="btn-txt">İletişim</span>
+                            <span class="btn-icon">
+                            <span class="icon flaticon-arrows-11" style="margin: 0px -2px!important;top:0px!important;"></span>
+                             </span></div></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endif %}

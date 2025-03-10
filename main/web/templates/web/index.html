@@ -1,0 +1,42 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "Berk Enerji" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+
+
+    <!-- Banner Section -->
+    {% include 'web/includes/slider.html' %}
+    
+    <!--Featured Section-->
+
+
+	<!--About Section-->
+    {% include 'web/includes/about.html' %}
+
+    <!--Programs Section-->
+    {% include 'web/includes/program.html' %}
+
+    <!--Services Section Three-->
+    {% include 'web/includes/services.html' %}
+
+
+
+
+    <!--Fun Facts Section-->
+
+    <!--Team Section-->
+
+    <!--Testimonial Section-->
+
+	{% include 'web/includes/enquiry.html' %}
+    <!--News Section-->
+    {% include 'web/includes/blog.html' %}
+
+
+
+ 
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}
+
+

@@ -1,0 +1,179 @@
+
+
+    {% load static i18n %}
+
+    {% if LANGUAGE_CODE == 'en' %}
+    <section class="programs-section-one">
+        <div class="bg-pattern-layer"></div>
+
+        <div class="auto-container">
+            <div class="sec-title centered wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Products</div>
+                <h2>Product Categories</h2>
+            </div>
+
+            <div class="program-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1200":{ "items" : "4" }}}'>
+                <!--Program Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/MMCB.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">MCCB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:mccben' %}">MCCB</a></h3>
+                    </div>
+                </div>
+                <!--Program Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/Connector_overload_relay.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">Contactor & Overload Relay</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:contactoren' %}">Contactor & Overload Relay</a></h3>
+                    </div>
+                </div>
+                
+                <!--Program Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/MMS.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">MMS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:mmsen' %}">MMS</a></h3>
+                    </div>
+                </div>
+                <!--Program Block-->
+               
+                <!--Program Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/MCB.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">MCB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:mcben' %}">MCB</a></h3>
+                    </div>
+                </div>
+                <!--Program Block-->
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/SPD.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">SPD</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:spden' %}">SPD</a></h3>
+                    </div>
+                </div>
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/ACB.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">ACB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:acben' %}">ACB</a></h3>
+                    </div>
+                </div>
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{% static 'web/images/EMPR.jpg' %}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">EMPR</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:empren' %}">EMPR</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% else %}
+
+    <section class="programs-section-one" id="prod">
+        <div class="bg-pattern-layer"></div>
+
+        <div class="auto-container">
+            <div class="sec-title centered wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Ürünlerimiz</div>
+                <h2>Gazlar ve Ekipmanlar</h2>
+            </div>
+
+            <div class="program-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 30, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 500, "responsive":{ "0" :{ "items": "1" }, "600" :{ "items" : "2" }, "768" :{ "items" : "2" }, "1024":{ "items" : "3" }, "1200":{ "items" : "4" }}}'>
+                <!--Program Block-->
+               
+                {% for product in products_in_header %}
+                <div class="program-block">
+                    <div class="inner-box">
+                        <div class="image-box">
+                            <figure class="image"><img src="{{product.image.url}}" alt=""></figure>
+                            <div class="hover-box">
+                                <div class="hover-inner">
+                                    <div class="content">
+                                        <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                        <div class="text">MCCB</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h3><a href="{% url 'web:per_detail_view' product.slug %}">{{product.title}}</a></h3>
+                    </div>
+                </div>
+
+                {% endfor %}
+                
+              
+            </div>
+        </div>
+    </section>
+
+    {% endif %}

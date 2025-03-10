@@ -1,0 +1,47 @@
+{% load static i18n %}
+{% if LANGUAGE_CODE == 'en' %}
+<section class="banner-section banner-one">
+    <div class="banner-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+    {% for sli in slider_en %}        
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url({{sli.sliderimage.url}})"></div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="sub-title">{{sli.title}}</div>
+                                <h1>{{sli.body}}</h1>
+                            <div class="links-box"><a href="{{sli.button}}" class="theme-btn btn-style-one" ><div class="btn-title">
+                            <span class="btn-txt">Read More</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a></div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+   {% endfor %}
+    </div>
+</section>
+
+{% else %}
+<section class="banner-section banner-one">
+    <div class="banner-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
+    {% for sli in slider %}        
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url({{sli.sliderimage.url}})"></div>
+            <div class="auto-container">
+                <div class="content-box">
+                    <div class="content">
+                        <div class="inner">
+                            <div class="sub-title">{{sli.title}}</div>
+                                <h1>{{sli.body}}</h1>
+                            <!--   <div class="links-box"><a href="{{sli.button}}" class="theme-btn btn-style-one" ><div class="btn-title">
+                         <span class="btn-txt">Detaylı Bilgi</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a></div>
+                        </div>-->
+                    </div>
+                </div>  
+            </div>
+        </div>
+   {% endfor %}
+    </div>
+</section>
+{% endif %}

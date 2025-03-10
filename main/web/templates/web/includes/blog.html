@@ -1,0 +1,82 @@
+{% load static i18n %}
+{% if LANGUAGE_CODE == 'en' %}
+<section class="news-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>Berk Enerji Blog</div>
+            <h2>Discover Our Blog !</h2>
+       
+        </div>
+
+        <div class="row clearfix">
+            <!--News Block-->
+              {% for blog in bloglist  %}         
+            <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image">
+                            <a href="blog-single.html"><img src="{{blog.image.url}}" alt=""></a></figure>
+                        <div class="post-date">
+                            <span class="day">{{blog.created|date:'m d'}}</span>
+                        </div>
+                    </div>
+                    <div class="lower-box">
+                     
+                        
+                        <h3><a href="{% url 'web:blog_detail' blog.slug %}">{{blog.title|upper}}</a></h3>
+                        <div class="text_p">
+                        <p>{{blog.body|truncatechars:50|safe}}</p>
+                        </div>
+                        
+                        <div class="link-box">
+                            <a href="{% url 'web:blog_detail' blog.slug %}"><span class="txt">Read More</span> <span class="icon flaticon-arrows-11"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}   
+            
+        </div>
+
+    </div>
+</section>
+{% else %}
+<section class="news-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>Berk Enerji Haberler</div>
+            <h2>Güncel İçeriklerimizi Keşfedin</h2>
+       
+        </div>
+
+        <div class="row clearfix">
+            {% for blog in bloglist_tr  %}         
+            <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image">
+                            <a href="{% url 'web:blog_detail_tr' blog.slug %}"><img src="{{blog.image.url}}" alt=""></a></figure>
+                        <div class="post-date">
+                            <span class="day">{{blog.created|date:'m d'}}</span>
+                        </div>
+                    </div>
+                    <div class="lower-box">
+                     
+                        
+                        <h3><a href="{% url 'web:blog_detail_tr' blog.slug %}">{{blog.title|upper}}</a></h3>
+                        <div class="text_p">
+                        <p>{{blog.body|truncatechars:50|safe}}</p>
+                        </div>
+                        
+                        <div class="link-box">
+                            <a href="{% url 'web:blog_detail_tr' blog.slug %}"><span class="txt">Okuyun</span> <span class="icon flaticon-arrows-11"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}   
+        </div>
+
+    </div>
+</section>
+{% endif %}

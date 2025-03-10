@@ -1,0 +1,64 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "Blog" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/Blog_V1.jpg');"></div>
+
+    <div class="auto-container">
+        <h1>Blog</h1>
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Home</a></li>
+                 
+                    <li class="active">Blog</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<section class="news-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>Volton Elektrik Blog</div>
+            <h2>Discover Our Current Content</h2>
+       
+        </div>
+
+        <div class="row clearfix">
+  {% for blog in bloglist %}            
+            <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                <div class="inner-box">
+                    <div class="image-box">
+                        <figure class="image">
+                            <a href="{% url 'web:blog_detail' blog.slug %}"><img src="{{blog.image.url}}" alt=""></a></figure>
+                        <div class="post-date">
+                                <span class="day">{{blog.created|date:'m d'}}</span>
+                        </div>
+                    </div>
+                    <div class="lower-box">
+                        <h3><a href="{% url 'web:blog_detail' blog.slug %}">{{blog.title|upper}}</a></h3>
+                        <div class="text_p">
+                        <p>{{blog.body|truncatechars:50|safe}}</p>
+                        </div>
+                        <div class="link-box">
+                            <a href="{% url 'web:blog_detail' blog.slug %}"><span class="txt">Read More</span> <span class="icon flaticon-arrows-11"></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    {% endfor %}
+      
+        </div>
+        {% include "web/includes/paginate.html" with page_obj=bloglist %}
+
+    </div>
+</section>
+
+
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}

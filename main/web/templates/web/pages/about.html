@@ -1,0 +1,103 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "SAMPLE" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/hakkimizda_V2.jpg');"></div>
+
+    <div class="auto-container">
+         <h1>About Us</h1>
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/"> Home</a></li>
+                    <li class="active">About Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about-section-one">
+    <div class="auto-container">
+    <div class="left-image2">
+        <div class="image">
+            <img src="images/main/b3.png" alt="">
+        </div>
+    </div>
+    <div class="right-image1">
+        <div class="image">
+            <img src="images/main/service-right-icon.png" alt="">
+        </div>
+    </div>
+            <div class="row clearfix">
+                <div class="text-column col-lg-12 col-md-12 col-sm-12">
+                     <div class="inner">
+                        <div class="sec-title wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                            <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>About Us
+                            </div>
+                            <h2>Our biggest investment is technology and innovation</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row clearfix">
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="image-box">
+                        <figure class="image wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms"><img src="images/main/s2.jpg" alt=""></figure>
+                        <figure class="image-two wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                            <img src="{% static 'web/images/hakkimizda.jpg' %}" alt=""  style="height: 350px;width: 600px;"></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="sec-title wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+
+                    </div>
+                    <div class="text-content wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <p> At Volton Elektrik, we spend most of our time following changing trends and apply the experience we have gained by adapting to new platforms and technologies in our new projects. Our experienced team with different competencies works on need-oriented solutions in order to provide the necessary contribution to your industry. </p>
+                    </div>
+LS Electric, which has achieved many innovations and successes in its 47 years of adventure; today, it is developing its leadership in the global market as one of the leading digital energy solutions companies in the world. LS Electric, which has been ranked among the 100 most innovative companies of the world for 9 years in a row, offers the exact solution you want with a unique experience with its high quality and rich product range, internationally certified test and R&D centers and its logistics network spread all over the world.                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+<section class="enquiry-section">
+      
+    <div class="auto-container">
+        <div class="sec-title centered wow fadeInDown" data-wow-delay="0ms"  data-wow-duration="1000ms" style="margin:0!important;">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Contact Us
+              <h2>How can we help you?</h2>
+
+        </div>
+
+        <div class="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+            <div class="lower-text">
+                <div class="sub-title">
+                </div>
+                <div class="info">You can contact us to get information about Volton Elektrik solutions, products and more.
+                </div>
+             <div class="info">              
+                 <a href="{% url 'web:enquires_view' %}" class="theme-btn btn-style-seven">
+                        <div class="btn-title">
+                            <span class="btn-txt">Contact us</span>
+                            <span class="btn-icon">
+                            <span class="icon flaticon-arrows-11" style="margin: 0px -2px!important;top:0px!important;"></span>
+                             </span></div></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}

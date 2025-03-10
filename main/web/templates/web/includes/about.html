@@ -1,0 +1,90 @@
+{% load static i18n %}
+
+{% if LANGUAGE_CODE == 'en' %}
+
+<section class="about-section-one">
+    <div class="auto-container">
+    <div class="left-image2">
+        <div class="image">
+            <img src="{% static 'web/images/main/b3.png' %}" alt="">
+        </div>
+    </div>
+        <div class="row clearfix">
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="image-box">
+                        <figure class="image wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms"><img src="{% static 'web/images/main/sds.jpg' %}" alt=""></figure>
+                        <figure class="image-two wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                            <img style="width: 600px;" src="{% static 'web/images/hakkimizda.jpg' %}" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="sec-title wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <div class="upper-text">
+                            <span class="logo_bolt2">
+                                <img src="{% static 'web/images/logo.svg' %}" alt="current">
+                            </span>
+                            About Us 
+                        </div>
+                        <h2>Our biggest investment is technology and innovation.</h2>
+                    </div>
+                    <div class="text-content wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <p>At Volton Elektrik, we spend most of our time following changing trends and apply the experience we have gained by adapting to new platforms and technologies in our new projects. Our experienced team with different competencies works on need-oriented solutions in order to provide the necessary contribution to your industry.</p>
+                    
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="about-section-one">
+    <div class="auto-container">
+    <div class="left-image2">
+        <div class="image">
+            <img src="{% static 'web/images/main/b3.png' %}" alt="">
+        </div>
+    </div>
+        <div class="row clearfix">
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="image-box">
+                        <figure class="image wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms"><img src="{% static 'web/images/main/sds.jpg' %}" alt=""></figure>
+                        <figure class="image-two wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                            <img style="width: 600px;" src="{% static 'web/images/main/lindeTup.png' %}" alt=""></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="sec-title wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <div class="upper-text">
+                            <span class="logo_bolt2">
+                                <img src="{% static 'web/images/logo.svg' %}" alt="current">
+                            </span>
+                            Hakkımızda 
+                        </div>
+                        <h2>Linde Gaz’ın satış ortağıyız.</h2>
+                    </div>
+                    <div class="text-content wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <p>Türkiye’nin önde gelen endüstriyel ve tıbbi gaz tedarikçisi olan Linde Gaz’ın Mervan Enerji olarak satış ortağıyız.
+
+                            Endüstriyel gazlarımız dünya çapında endüstri, bilim ve araştırma alanlarında kullanılmaktadır.
+                            
+                            Tıbbi gaz ürünlerimiz sağlık uzmanlarının en iyi tedaviyi sağlamalarına destek olur.</p>
+                    
+                    </div>
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+{% endif %}

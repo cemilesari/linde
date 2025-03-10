@@ -1,0 +1,107 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "Ürün Listesi" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/urunler_V1.jpg');"></div>
+
+    <div class="auto-container">
+        <h1>Ürünler</h1>
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Ana Sayfa</a></li>
+                    <li class="active">Ürünler</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Sidebar Side-->
+            <div class="sidebar-side col-lg-4 col-md-8 col-sm-12">
+                <aside class="sidebar service-sidebar">
+                    <!--Sidebar Widget-->
+                    <div class="sidebar-widget services-widget">
+                        <div class="widget-inner">
+                            <ul>
+                                <li class="active"><a href="{% url 'web:per_view' %}"><span class="txt">Tüm Ürünler</span> </a></li>
+                                <li><a href="{% url 'web:mccb' %}"><span class="txt">MCCB</span> </a></li>
+                                <li><a href="{% url 'web:contactor' %}"><span class="txt">Contactor & Overload Relay</span></a></li>
+                                <li><a href="{% url 'web:mms' %}"><span class="txt">MMS</span> </a></li>
+                                <li><a href="{% url 'web:mcb' %}"><span class="txt">MCB</span> </a></li>
+                                <li><a href="{% url 'web:spd' %}"><span class="txt">SPD</span>  </a></li>
+                                <li><a href="{% url 'web:acb' %}"><span class="txt">ACB</span>  </a></li>
+                                <li><a href="{% url 'web:empr' %}"><span class="txt">EMPR</span> </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Sidebar Widget-->
+                    <div class="sidebar-widget info-widget">
+                        <div class="widget-inner">
+                            <div class="lower">
+                                <div class="subtitle">Bize Ulaşabilirsiniz !</div>
+                                <div class="icon-box"><span class="flaticon-telephone-1"></span></div>
+                                <div class="phone"><a href="+90 531 656 91 44">+90 531 656 91 44</a></div>
+                                <div class="email"><a href="mailto:berkenerji@lindegazmarket.com">berkenerji@lindegazmarket.com</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Sidebar Widget-->
+             
+                </aside>
+            </div>
+            <!--Content Side-->
+            <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                <div class="service-details">
+                    <div class="details-inner">
+                        <div class="main-image">
+                            <img src="images/main/serd2.jpg" alt="">
+                        </div>
+                        <div class="sec-title service-title">
+                            <h2>Tüm Ürünler</h2>
+                            <div class="program-block">
+                                <div class="row">
+                                {% for per in protrlist %}
+                                    <div class=" col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                                        <div class="inner-box">
+                                            <div class="image-box">
+                                                <figure class="image"><img src="{{per.image.url}}" alt=""></figure>
+                                                <div class="hover-box">
+                                                    <div class="hover-inner">
+                                                        <div class="content">
+                                                            <div class="icon-box"><span class="flaticon-chimney"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h3><a href="{% url 'web:per_detail_view' per.slug %}"> {{per.title|upper}}</a></h3>
+                                        </div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                {% include "web/includes/paginate.html" with page_obj=protrlist %}
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}

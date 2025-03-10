@@ -1,0 +1,482 @@
+{% load static i18n %}
+
+{% if LANGUAGE_CODE == 'en' %}
+<section class="pricing-section">
+    <div class="auto-container">
+       <div class="right-image2">
+        <div class="image">
+            <img src="{% static 'web/images/main/b1.png' %}" alt="">
+        </div>
+    </div>
+       <div class="tabs-box pricing-tabs">
+
+            <div class="upper-row clearfix">
+                <!--Left Column-->
+                <div class="left-column">
+                    <div class="sec-title">
+                        <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/bolt.gif' %}" alt="current"></span>who are electman</div>
+                        <h2>Pricing Structure</h2>
+                        <div class="bottom-dots clearfix">
+                            <span class="dot line-dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <!--Right Column-->
+                <div class="right-column">
+                    <div class="buttons-box">
+                        <ul class="tab-buttons clearfix">
+                            <li class="tab-btn active-btn" data-tab="#tab-monthly">
+                                <span class="btn-title">Monthly</span>
+                            </li>
+                            <li class="tab-btn" data-tab="#tab-yearly">
+                                <span class="btn-title">Yearly</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!--Tabs Content-->
+            <div class="tabs-content">
+                <!--Tab -->
+                <div class="tab active-tab" id="tab-monthly">
+                    <div class="tab-inner">
+                        <div class="row clearfix">
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/a.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Residential Services</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">19.00</span>
+                                            <span class="quantity">per Month</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Design-Build Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Supply and install Sensor light</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Lighting Fixtures</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block popped col-lg-4 col-md-6 col-sm-12 featured">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/f.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Commercial Area</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">25.30</span>
+                                            <span class="quantity">per Month</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                       <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Data and Communications</li>
+                                            <li><span class="icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/e.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Industrial Service</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">39.30</span>
+                                            <span class="quantity">per Moth</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Retrofits and Upgrades</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Critical Installations</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="tab" id="tab-yearly">
+                    <div class="tab-inner">
+                        <div class="row clearfix">
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/b.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Residential Services</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">199.00</span>
+                                            <span class="quantity"> Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Design-Build Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Supply and install Sensor light</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Lighting Fixtures</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block popped col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/c.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Commercial Area</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">225.30</span>
+                                            <span class="quantity">Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                       <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Data and Communications</li>
+                                            <li><span class="icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/e.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Industrial Service</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">339.30</span>
+                                            <span class="quantity">Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Retrofits and Upgrades</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Critical Installations</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% else %}
+<section class="pricing-section">
+    <div class="auto-container">
+       <div class="right-image2">
+        <div class="image">
+            <img src="{% static 'web/images/main/b1.png' %}" alt="">
+        </div>
+    </div>
+       <div class="tabs-box pricing-tabs">
+
+            <div class="upper-row clearfix">
+                <!--Left Column-->
+                <div class="left-column">
+                    <div class="sec-title">
+                        <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/bolt.gif' %}" alt="current"></span>Fiyatlandırma</div>
+                        <h2>Fiyat Şablonları</h2>
+                        <div class="bottom-dots clearfix">
+                            <span class="dot line-dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <!--Right Column-->
+                <div class="right-column">
+                    <div class="buttons-box">
+                        <ul class="tab-buttons clearfix">
+                            <li class="tab-btn active-btn" data-tab="#tab-monthly">
+                                <span class="btn-title">Aylık</span>
+                            </li>
+                            <li class="tab-btn" data-tab="#tab-yearly">
+                                <span class="btn-title">Yıllık</span>
+                            </li>
+                        </ul>
+                    </div>
+                 </div>
+            </div>
+
+            <!--Tabs Content-->
+            <div class="tabs-content">
+                <!--Tab -->
+                <div class="tab active-tab" id="tab-monthly">
+                    <div class="tab-inner">
+                        <div class="row clearfix">
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/a.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Residential Services</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">19.00</span>
+                                            <span class="quantity">per Month</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Design-Build Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Supply and install Sensor light</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Lighting Fixtures</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block popped col-lg-4 col-md-6 col-sm-12 featured">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/f.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Commercial Area</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">25.30</span>
+                                            <span class="quantity">per Month</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                       <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Data and Communications</li>
+                                            <li><span class="icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/e.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Industrial Service</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">39.30</span>
+                                            <span class="quantity">per Moth</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Retrofits and Upgrades</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Critical Installations</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="tab" id="tab-yearly">
+                    <div class="tab-inner">
+                        <div class="row clearfix">
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/b.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Residential Services</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">199.00</span>
+                                            <span class="quantity"> Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Design-Build Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Supply and install Sensor light</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Lighting Fixtures</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="blk icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block popped col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/c.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Commercial Area</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">225.30</span>
+                                            <span class="quantity">Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                       <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Data and Communications</li>
+                                            <li><span class="icon flaticon-nature"></span>Replace hot plates</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Switchboard Upgrade</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Pricing Block-->
+                            <div class="pricing-block col-lg-4 col-md-6 col-sm-12">
+                                <div class="block-inner">
+                                    <div class="plan-header">
+                                        <div class="icon-box"><img src="{% static 'web/images/icons/e.png' %}" alt="current"></div>
+                                        <div class="plan-title"><h2>Industrial Service</h2></div>
+                                    </div>
+                                    <div class="plan-price">
+                                        <div class="price">
+                                            <span class="currency">$</span>
+                                            <span class="amount">339.30</span>
+                                            <span class="quantity">Yearly</span>
+                                        </div>
+                                    </div>
+                                    <div class="features">
+                                        <ul>
+                                            <li><span class="icon flaticon-nature"></span>Annual A/C inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Annual electrical inspection</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Retrofits and Upgrades</li>
+                                            <li><span class="icon flaticon-nature"></span>Install double power outside</li>
+                                            <li><span class="icon flaticon-nature"></span>Emergency Contracting Services</li>
+                                            <li><span class="icon flaticon-nature"></span>Critical Installations</li>
+                                        </ul>
+                                    </div>
+                                    <div class="links-box">
+                                        <a href="contact.html" class="theme-btn btn-style-three"><div class="btn-title"><span class="btn-txt">Get Started</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

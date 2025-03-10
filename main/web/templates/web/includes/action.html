@@ -1,0 +1,43 @@
+{% load static i18n %}
+
+{% if LANGUAGE_CODE == 'en' %}
+<section class="call-to-action-three" style="background-image: url({% static 'web/images/about/c1.png' %})">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="title-column col-xl-7 col-lg-12 col-md-12">
+                <div class="inner wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <h2>Electman Balance The Heat And Power With Organic</h2>
+                </div>
+            </div>
+            <div class="links-column col-xl-5 col-lg-12 col-md-12">
+                <div class="inner wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <div class="links-box">
+                        <a href="contact.html" class="theme-btn btn-style-seven"><div class="btn-title"><span class="btn-txt">Energy Fueling</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% else %}
+<section class="call-to-action-three" style="background-image: url({% static 'web/images/about/c1.png' %})">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <div class="title-column col-xl-7 col-lg-12 col-md-12">
+                <div class="inner wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <h2>Electman Balance The Heat And Power With Organic</h2>
+                </div>
+            </div>
+            <div class="links-column col-xl-5 col-lg-12 col-md-12">
+                <div class="inner wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                    <div class="links-box">
+                        <a href="contact.html" class="theme-btn btn-style-seven"><div class="btn-title"><span class="btn-txt">Energy Fueling</span><span class="btn-icon"><span class="icon flaticon-arrows-11"></span> </span></div></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endif %}

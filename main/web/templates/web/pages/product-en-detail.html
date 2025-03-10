@@ -1,0 +1,118 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{{pro.titlesite}}{% endblock title %}
+{% block meta %}
+<meta name="description" content="{{pro.description}}">
+<meta name="keywords" content="{% for cer in pro.keywords.all %}{{cer.name}},{% endfor %}">
+{% endblock meta %}
+
+{% block extracss %}{% endblock extracss %}
+{% block content %}
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/urunler_V1.jpg');"></div>
+
+    <div class="auto-container">
+        <h1>Product Detail</h1>
+        <div class="breadcrumb-box">
+            <div class="auto-container">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Home</a></li>
+                    <li class="active">Products</li>
+                    <li class="active">{{pro.title}}</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="sidebar-page-container">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Sidebar Side-->
+            <div class="sidebar-side col-lg-4 col-md-8 col-sm-12">
+                <aside class="sidebar service-sidebar">
+                    <!--Sidebar Widget-->
+                    <div class="sidebar-widget services-widget">
+                        <div class="widget-inner">
+                            <ul>
+                                 <li><a href="{% url 'web:per_viewen' %}"><span class="txt">ALL Products</span> </a></li>
+                                <li ><a href="{% url 'web:mccben' %}"><span class="txt">MCCB</span> </a></li>
+                                <li ><a href="{% url 'web:contactoren' %}"><span class="txt">Contactor & Overload Relay</span></a></li>
+                                <li><a href="{% url 'web:mmsen' %}"><span class="txt">MMS</span> </a></li>
+                                <li  ><a href="{% url 'web:mcben' %}"><span class="txt">MCB</span> </a></li>
+                                <li ><a href="{% url 'web:spden' %}"><span class="txt">SPD</span>  </a></li>
+                                <li  ><a href="{% url 'web:acben' %}"><span class="txt">ACB</span>  </a></li>
+                                <li ><a href="{% url 'web:empren' %}"><span class="txt">EMPR</span> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Sidebar Widget-->
+                    <div class="sidebar-widget info-widget">
+                        <div class="widget-inner">
+                            <div class="lower">
+                                <div class="subtitle">Bize Ulaşabilirsiniz !</div>
+                                <div class="icon-box"><span class="flaticon-telephone-1"></span></div>
+                                <div class="phone"><a href="+90 531 656 91 44">+90 531 656 91 44</a></div>
+                                <div class="email"><a href="mailto:info@voltonelektrik.com.tr">info@voltonelektrik.com.tr</a></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="sidebar-widget downloads-widget">
+                        <div class="widget-inner">
+                            <h3>İndirilebilir Kaynaklar</h3>
+                            <ul>
+                                <li><a href="{{pro.kullanim.body.url}}" target="_blank"><span class="far fa-file-pdf"></span> Kullanım Klavuzu</a></li>
+                                <li><a href="{{pro.brosur.body.url}}" target="_blank"><span class="far fa-file-pdf"></span> Broşür</a></li>
+                                <li><a href="{{pro.brosur.body.url}}" target="_blank"><span class="far fa-file-pdf"></span>Sertifika</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Sidebar Widget-->
+             
+                </aside>
+            </div>
+            <!--Content Side-->
+            <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                <div class="service-details">
+                    <div class="details-inner">
+                        <div class="main-image">
+                            <img src="{{pro.image.url}}" alt="">
+                        </div>
+                        <div class="content-side col-lg-8 col-md-12 col-sm-12">
+                            <div class="service-details">
+                                <div class="details-inner">
+                                    <div class="sec-title service-title">
+                                        <h2>{{pro.title|upper}}</h2>
+                                        <div class="subtitle">{{pro.al_body2}}</div>
+                                    </div>
+                                    <div class="text-block text-content">
+                                        <p>{{pro.al_body2}}</p>
+                                        <p>{{pro.al_body3}}</p>
+                                        <p>{{pro.al_body4}}</p>
+
+                                    </div>
+                                    <div class="featured-list">
+                                        <ul class="clearfix">
+                                            <li>
+                                             </div>
+                                                <div class="title"> {{pro.tek_body|safe}}</div>
+                                            </li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}

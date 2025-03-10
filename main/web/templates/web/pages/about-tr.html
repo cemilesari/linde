@@ -1,0 +1,102 @@
+{% extends "web/base.html" %}
+{% load static i18n %}
+{% block title %}{% trans "Hakkımızda" %}{% endblock title %}
+{% block extracss %}{% endblock extracss %}
+
+{% block content %}
+<section class="page-banner">
+    <div class="image-layer" style="background-image: url('{{STATIC_URL}}web/images/hakkimizda_V2.jpg');"></div>
+        <div class="auto-container">
+            <h1>Hakkımızda</h1>
+            <div class="breadcrumb-box">
+                <div class="auto-container">
+                    <ul class="bread-crumb clearfix">
+                        <li><a href="/">Ansa Sayfa</a></li>
+                        <li class="active">Hakkımızda</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="about-section-one">
+    <div class="auto-container">
+    <div class="left-image2">
+        <div class="image">
+            <img src="images/main/b3.png" alt="">
+        </div>
+    </div>
+    <div class="right-image1">
+        <div class="image">
+            <img src="images/main/service-right-icon.png" alt="">
+        </div>
+    </div>
+     <div class="row clearfix">
+                <div class="text-column col-lg-12 col-md-12 col-sm-12">
+                     <div class="inner">
+                        <div class="sec-title wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                            <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span>Hakkımızda
+                            </div>
+                        <h2>En büyük yatırımımız teknoloji ve inovasyon</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="row clearfix">
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="image-box">
+                        <figure class="image wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="2000ms"><img src="images/main/s2.jpg" alt=""></figure>
+                        <figure class="image-two wow fadeInRight" data-wow-delay="0ms"  data-wow-duration="2000ms">
+                            <img src="{% static 'web/images/hakkimizda.jpg' %}" alt=""style="height: 350px;width: 600px;"></figure>
+                    </div>
+                </div>
+            </div>
+            <div class="text-column col-lg-6 col-md-12 col-sm-12">
+                <div class="inner">
+                    <div class="text-content wow fadeInLeft" data-wow-delay="0ms"  data-wow-duration="1000ms">
+                        <p> Dünya devi LS Electric’in uluslararası tecrübesinden aldığımız yenilikçi yaklaşım ve çözümler ile müşterilerimizin ihtiyaçları özelinde hizmet sağlıyoruz. Sektördeki hizmet sağlayıcı konumumuzu, LS Electric ürünlerinin çeşitliliği, ürünlerin performans özellikleri ve müşteri memnuniyeti odaklı yaklaşımımız ile güçlendiriyoruz. Bu vizyon ile çıktığımız yolculukta tüm iş ortaklarımıza ve müşterilerimize daha iyi bir hizmet sunabilmek için araştırıyor, yeni çözümler geliştiriyor ve yanlarında yer alıyoruz. 
+                        </p>
+                    </div>
+47 yıllık serüveninde birçok yenilik ve başarıya imza atan LS Electric; bugün Dünya’nın önde gelen dijital enerji çözümleri firmalarından biri olarak global pazardaki liderliğini geliştiriyor. 9 yıl üst üste Dünya’nın en inovatif 100 firması arasında gösterilen LS Electric, kaliteli ve zengin ürün çeşitliliği, uluslararası sertifikalara sahip test ve AR-GE merkezleri ve tüm Dünya’ya yayılmış lojistik ağı ile tam da istediğiniz çözümü benzersiz bir deneyimle sunuyor.
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+</section>
+
+<section class="enquiry-section">
+      
+    <div class="auto-container">
+        <div class="sec-title centered wow fadeInDown" data-wow-delay="0ms"  data-wow-duration="1000ms" style="margin:0!important;">
+                <div class="upper-text"><span class="logo_bolt2"><img src="{% static 'web/images/logo.svg' %}" alt="current"></span> Bize Ulaşın
+              <h2>Size nasıl yardımcı olabiliriz?</h2>
+
+        </div>
+
+        <div class="content-box wow fadeInUp" data-wow-delay="0ms"  data-wow-duration="2000ms">
+            <div class="lower-text">
+                <div class="sub-title">
+                </div>
+                <div class="info">Berk Enerji çözümleri, ürünleri ve daha fazlası hakkında bilgi almak için bize ulaşabilirsiniz.                   
+                   
+                </div>
+             <div class="info">              
+                 <a href="{% url 'web:iletisim' %}" class="theme-btn btn-style-seven">
+                        <div class="btn-title">
+                            <span class="btn-txt">İletişim</span>
+                            <span class="btn-icon">
+                            <span class="icon flaticon-arrows-11" style="margin: 0px -2px!important;top:0px!important;"></span>
+                             </span></div></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
+{% block extrajs %}{% endblock extrajs %}
