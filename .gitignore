@@ -56,7 +56,7 @@ node_modules/
 staticfiles
 
 # virtual environments
-.env
+#.env
 env/
 db.sqlite3
 
