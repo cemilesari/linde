@@ -168,7 +168,7 @@ ADMIN_URL = env('ADMIN_URL', default="admin/")
 
 LOCALE_PATHS = (str(APPS_DIR('locale')), str(CONF_DIR('locale')),)
 
-LANGUAGE_CODE = env('LANGUAGE_CODE', default="en")
+LANGUAGE_CODE = env('LANGUAGE_CODE', default="tr")
 
 LANGUAGES = (
     ('en', _('English')),
