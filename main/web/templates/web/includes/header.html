@@ -1,72 +1,7 @@
 {% load static i18n %}
 <div class="page-wrapper">
 <div class="preloader"><div class="icon"></div></div>
-{% if LANGUAGE_CODE == 'en' %}
- <header class="main-header header-style-one inner-page-header">
-    <div class="header-main-box" style="position: fixed;width: inherit;">
-        <div class="auto-container">
-            <div class="inner-container">
-                <div class="upper-row clearfix">
-                    <!--Logo-->
-                    <div class="logo-box">
-                        <div class="logo pull-left">
-                            <a href="/" title=""><img style="width:300px;height:300px;"src="{% static 'web/images/LOGO_EN.svg' %}" alt="" title=""></a>
-                        </div>
-                    </div>
-                    <div class="right-info clearfix">
-                            <nav class="main-menu navbar-expand-md navbar-light">
-                                <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
-                                    <ul class="navigation clearfix">
-                                        <li class="current dropdown"><a href="/">Home</a></li>
-                                        <li class="dropdown"><a href="{% url 'web:about_view' %}">About Us</a></li>
-                                        <li class="dropdown"><a href="#">Products</a>
-                                            <ul>
-                                                <li><a href="{% url 'web:per_viewen' %}">ALL</a></li>
-                                                <li><a href="{% url 'web:mccben' %}">MCCB</a></li>
-                                                <li><a href="{% url 'web:contactoren' %}">Contactor & Overload Relay</a></li>
-                                                <li><a href="{% url 'web:mmsen' %}">MMS</a></li>
-                                                <li><a href="{% url 'web:mcben' %}">MCB</a></li>
-                                                <li><a href="{% url 'web:spden' %}">SPD</a></li>
-                                                <li><a href="{% url 'web:acben' %}">ACB</a></li>
-                                                <li><a href="{% url 'web:empren' %}">EMPR</a></li>
-                                            </ul>
-                                        </li>
-                                        </li>
-                                        <li><a href="#">References</a></li>
-                                        <li><a href="{% url 'web:blog_view' %}">Blog</a></li>
-                                        <li><a href="{% url 'web:enquires_view' %}">Contact</a></li>
-                                        <li><a href="#">{% include "web/includes/langs.html" %}</a></li>
-                                    </ul>
-                                </div>
-                            </nav>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Mobile Menu  -->
-    <div class="mobile-menu">
-        <div class="menu-backdrop"></div>
-        <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
-        
-        <nav class="menu-box">
-            <div class="nav-logo"><a href="index-2.html"><img src="{% static 'web/images/nav-logo.html' %}" alt="" title=""></a></div>
-            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
-            <!--Social Links-->
-            <div class="social-links">
-                <ul class="clearfix">
-                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                    <li><a href="#"><span class="fab fa-facebook-square"></span></a></li>
-                    <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>
-                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
-                    <li><a href="#"><span class="fab fa-youtube"></span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </div><!-- End Mobile Menu -->
-</header>
-{% else %}
+
 <header class="main-header header-style-one inner-page-header">
     <div class="header-main-box" style="position: fixed;width: inherit;">
         <div class="auto-container">
@@ -142,4 +77,3 @@
         </nav>
     </div><!-- End Mobile Menu -->
 </header>
-{% endif %}
