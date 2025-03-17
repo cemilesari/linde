@@ -2,7 +2,7 @@
 from .com import *  # noqa
 
 DATABASES = {
-    'default': env.db('PRODB_URL', default='postgres://berkenerji:626Czc4*i@127.0.0.1:5432/django_aiodb')
+    'default': env.db('PRODB_URL', default='postgres://berkenerji1:berkenerji_123@127.0.0.1:5432/berkenerji')
 }
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
