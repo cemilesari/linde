@@ -231,4 +231,4 @@ os.environ["DJANGO_ALLOW_ASYNC_UNSAFE"] = "true"
 DEFAULT_BLOG_IMAGE  = MEDIA_URL + "blogs/blog.png"
 DEFAULT_BLOG_FOLDER = "blogs"
 
-USE_TZ = True
+USE_TZ = False
