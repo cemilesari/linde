@@ -1,12 +1,32 @@
 {% extends "web/base.html" %}
 {% load static i18n %}
 {% block title %}{% trans "Berk Enerji" %}{% endblock title %}
-{% block extracss %}{% endblock extracss %}
+{% block extracss %}
+<link type="text/css" href="{% static 'web/css/slider.css' %}"      rel="stylesheet">
+
+{% endblock extracss %}
 {% block content %}
+
+<div class="slider">
+    <div class="slides">
+      {% for img in slider %}
+      <div class="slide active" style="background-image:url({{img.sliderimage.url}})">
+        <div class="caption">
+          <h2>{{img.title}}</h2>
+          <p>{{img.body}}</p>
+          <a href="{{img.button}}"  target="_blank" class="btn">Detaylı bilgi için</a>
+        </div>
+      </div>
+
+      {% endfor %}
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+
 
 
     <!-- Banner Section -->
-    {% include 'web/includes/slider.html' %}
     
     <!--Featured Section-->
 
@@ -37,6 +57,9 @@
 
  
 {% endblock content %}
-{% block extrajs %}{% endblock extrajs %}
+{% block extrajs %}
+<script type="text/javascript" src="{% static 'web/js/slider.js'%}"></script>
+
+{% endblock extrajs %}
 
 

@@ -1,5 +1,15 @@
 {% load static i18n %}
 
+<div class="slider">
+    <div class="slides">
+      {% for img in slider %}
+        <img src="{{ img.sliderimage.url }}" class="slide active" alt="slide{{ loop.index }}">
+      {% endfor %}
+    </div>
+    <button class="prev" onclick="prevSlide()">❮</button>
+    <button class="next" onclick="nextSlide()">❯</button>
+  </div>
+
 <section class="banner-section banner-one">
     <div class="banner-carousel strnix-carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
     {% for sli in slider %}        
