@@ -24,7 +24,8 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     opacity: 0;
     transition: opacity 1s ease-in-out;
@@ -45,18 +46,16 @@
   }
   
   .caption h2 {
-    font-size: 48px;
     margin-bottom: 15px;
   }
   
   .caption p {
     font-size: 20px;
-    margin-bottom: 25px;
   }
   
   .btn {
     display: inline-block;
-    padding: 12px 24px;
+    padding: 6px 12px;
     background: #ff5722;
     color: white;
     text-decoration: none;
@@ -104,13 +103,13 @@
 
   .caption {
     position: absolute;
-    bottom: 100px;
-    left: 150px;
+    bottom: 215px;
+    left: 100px;
     background-color: rgba(240, 240, 240, 0.6); /* soluk gri yarı saydam */
-    padding: 30px;
+    padding: 20px;
     border-radius: 10px;
     color: #222;
-    max-width: 600px;
+    max-width: 300px;
     opacity: 0;
     transform: translateY(30px);
     animation: fadeInUp 1s ease forwards;
@@ -118,13 +117,14 @@
   }
   
   .caption h2 {
-    font-size: 42px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    margin-bottom: 10px!important;
+
   }
   
   .caption p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 15px;
+    margin-bottom: 10px!important;
   }
   
   .slide.active .caption {
