@@ -61,12 +61,7 @@
                         </div>
                     </div>
                     <div class="lower-box">
-                     
-                        
                         <h3><a href="{% url 'web:blog_detail_tr' blog.slug %}">{{blog.title|upper}}</a></h3>
-                        <div class="text_p">
-                        <p>{{blog.body|truncatechars:50|safe}}</p>
-                        </div>
                         
                         <div class="link-box">
                             <a href="{% url 'web:blog_detail_tr' blog.slug %}"><span class="txt">Okuyun</span> <span class="icon flaticon-arrows-11"></span></a>
